@@ -1,0 +1,17 @@
+/*
+  connect FSR with pull down resistor 10k to gnd then
+  connect FSR 1 to pin D12, FSR 2 to pin D9
+  vcc LiPo to pin Vin*/
+
+int FSRstart = 12;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(FSRstart, INPUT);
+}
+
+void loop() {
+  if (digitalRead(FSRstart) == HIGH) {
+    //your program
+  }
+}
